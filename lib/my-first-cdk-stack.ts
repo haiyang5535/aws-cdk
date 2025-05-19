@@ -10,7 +10,7 @@ export class MyFirstCdkStack extends cdk.Stack {
       functionName: 'first-cdk-lambda',
       code: new lambda.AssetCode('src'),
       handler: 'index.handler',
-      runtime: lambda.Runtime.NODEJS_22_X,
+      runtime: lambda.Runtime.NODEJS_18_X,
       memorySize: 128
     });
   }
